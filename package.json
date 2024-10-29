@@ -1,6 +1,6 @@
 {
   "name": "CYaPass",
-  "version": "1.4.10",
+  "version": "1.5.0",
   "description": "Never type a password again. And, never memorize or make up a password again.",
   "main": "js/main.js",
   "scripts": {
@@ -28,7 +28,7 @@
     "@electron-forge/maker-squirrel": "^6.4.1",
     "@electron-forge/maker-zip": "^6.4.1",
     "@electron-forge/plugin-auto-unpack-natives": "^6.4.1",
-    "electron": "^26.2.4",
+    "electron": "^33.0.2",
     "electron-builder": "^24.13.3",
     "electron-toolkit": "^1.0.2"
   },
@@ -49,7 +49,7 @@
     "appId": "com.cyapass.CYaPass",
     "copyright": "Copyright © 2022 roger deutsch",
     "productName": "CYaPass",
-    "electronVersion": "26.2.1",
+    "electronVersion": "33.0.2",
     "asar": true,
     "directories": {
       "output": "dist",
@@ -58,7 +58,11 @@
     "linux": {
       "category": "Utility.Passwords",
       "executableName": "cyapass",
-      "target": ["AppImage", "deb","rpm"]
+      "target": [
+        "AppImage",
+        "deb",
+        "rpm"
+      ]
     },
     "win": {
       "icon": "build/CYaPass512x512.png"
